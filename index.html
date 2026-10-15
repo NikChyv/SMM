@@ -101,13 +101,15 @@ figcaption{font:500 12px/1.3 var(--mono);letter-spacing:.06em;text-transform:upp
 .video-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .video-row .phone{max-width:300px}
 
-.derma{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:start}
+.derma{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:start}
+.derma figure{max-width:440px}
+.case-note{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);font:500 13px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .funnel{display:grid;gap:0;margin-top:22px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--tile)}
 .funnel div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px;padding:14px 16px;font-size:15px}
 .funnel div + div{border-top:1px solid var(--line)}
 .funnel span{font:500 12px/1.6 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 
-.stats-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.9fr);gap:20px;align-items:center;margin-top:28px}
+.stats-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:center;margin-top:28px}
 .stat{background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:20px}
 .stat .n{font:800 clamp(34px,4.4vw,56px)/1 var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
 .stat .l{margin-top:10px;font-size:14px;color:var(--muted)}
@@ -164,8 +166,6 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px}
   .services,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
   .svc,.svc:not(:nth-child(3n+1)),.steps li,.steps li:not(:nth-child(3n+1)){padding:20px 18px 22px 0;border-left:0}
   .svc:nth-child(2n),.steps li:nth-child(2n){padding-left:18px;border-left:1px solid var(--line)}
-  .stats-pair{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-  .stats-pair figure{grid-column:1/-1;max-width:420px}
   .roles{grid-template-columns:repeat(2,minmax(0,1fr))}
   section{padding-block:56px}
 }
@@ -275,14 +275,15 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px}
         <p class="reel-cap"><b>«Один день пушистого сотрудника»</b><span>HR-бренд: офисный йорк проживает рабочий день в офисе, от 8:03 до дороги домой.</span></p>
       </div>
     </div>
+    <p class="case-note">Ролики сняты для крупного банка</p>
   </section>
 
   <!-- CASE: DERMAGENETIC -->
   <section class="case wrap" id="dermagenetic" aria-labelledby="dg-h">
     <div class="derma">
       <figure>
-        <img src="img/derma.jpg" alt="Профиль dermagenetic.by: шапка, актуальные и лента" width="750" height="769">
-        <figcaption>dermagenetic.by · лента сейчас</figcaption>
+        <img src="img/derma.jpg" alt="Профиль dermagenetic.by: шапка, актуальные и лента" width="780" height="1895">
+        <figcaption>dermagenetic.by</figcaption>
       </figure>
       <div>
         <span class="eyebrow">Профессиональная косметика · B2B и B2C</span>
@@ -294,14 +295,15 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px}
           <li>Редакционный визуал: предметка, атмосферные кадры, экспертные обложки</li>
         </ul>
         <div class="funnel">
-          <div><span>Обучение</span>Онлайн-вебинар с тренером бренда и экспертный семинар</div>
+          <div><span>Обучение</span>Онлайн-вебинар с тренером бренда и экспертный семинар в Гродно</div>
           <div><span>Клиенты</span>Клиентский день: разбор косметички и подбор ухода</div>
           <div><span>Вовлечение</span>Конкурс кейсов до/после среди мастеров, розыгрыш</div>
           <div><span>Доверие</span>Отзывы и представление новых тренеров</div>
         </div>
         <div class="facts">
-          <div class="fact"><div class="n">0 → 1 105</div><div class="l">подписчиков в профессиональной нише</div></div>
-          <div class="fact"><div class="n">64</div><div class="l">публикации в единой системе</div></div>
+          <div class="fact"><div class="n">С нуля</div><div class="l">запуск аккаунта бренда без базы и без истории</div></div>
+          <div class="fact"><div class="n">2</div><div class="l">аудитории в одном профиле: мастера и их клиенты</div></div>
+          <div class="fact"><div class="n">4</div><div class="l">формата событий: вебинар, семинар, клиентский день, конкурс</div></div>
         </div>
       </div>
     </div>
@@ -327,9 +329,8 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px}
       <figure class="after"><img src="img/brows-after.jpg" alt="Лента после: единый стиль" width="722" height="962"><figcaption>Стало</figcaption></figure>
     </div>
     <div class="stats-pair">
-      <div class="stat"><div class="n">+77,6%</div><div class="l"><b>охват</b>: 5 755 аккаунтов к предыдущему месяцу</div></div>
-      <div class="stat"><div class="n">+496%</div><div class="l"><b>вовлечённые аккаунты</b>: 149 к предыдущему месяцу</div></div>
-      <figure><img src="img/brows-stats.jpg" alt="Скриншот статистики Instagram" width="1100" height="754"><figcaption>Статистика Instagram</figcaption></figure>
+      <div class="stat"><div class="n">+77,6%</div><div class="l"><b>охват</b> к предыдущему месяцу, по статистике Instagram</div></div>
+      <div class="stat"><div class="n">+496%</div><div class="l"><b>вовлечённые аккаунты</b> к предыдущему месяцу</div></div>
     </div>
   </section>
 
@@ -356,41 +357,6 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px}
     <div class="ba">
       <figure><img src="img/nastya-before.jpg" alt="Лента эксперта до: анонсы на ярком фоне" width="961" height="1280"><figcaption>Было</figcaption></figure>
       <figure class="after"><img src="img/nastya-after.jpg" alt="Профиль эксперта после: экспертные обложки" width="1100" height="765"><figcaption>Стало</figcaption></figure>
-    </div>
-  </section>
-
-  <!-- CASE: PRODUCTION -->
-  <section class="case wrap" id="production" aria-labelledby="pr-h">
-    <div class="case-head">
-      <div>
-        <span class="eyebrow">Производство · Минск · B2B</span>
-        <h2 id="pr-h">Мастерская изделий из фанеры: упаковка под заказы</h2>
-      </div>
-      <div>
-        <p class="intro">Профиль выглядел как личная страница: «Антон, предприниматель». Непонятно, что заказать, для кого и как быстро.</p>
-        <p class="intro">Переписали шапку так, чтобы за три секунды было ясно, что делают, для кого, за какой срок и куда везут. Добавили единые обложки актуальных, закрепы «Пять причин выбрать нас» и «Правила ухода», Reels процесса.</p>
-      </div>
-    </div>
-    <div class="bio">
-      <div class="card old">
-        <span class="eyebrow">Шапка: было</span>
-        <p><strong>Антон</strong> · Предприниматель<br>Изготовление изделий из фанеры на заказ. Широкий спектр изделий, от простых элементов до сложных композиций. Логотипы, коробки и многое другое</p>
-      </div>
-      <div class="card new">
-        <span class="eyebrow">Шапка: стало</span>
-        <strong>Стенды | Логотипы | Панно | Конструкторы | Минск</strong>
-        <ul>
-          <li>Изготовим оборудование для баров и кафе</li>
-          <li>Нанесём гравировку</li>
-          <li>Скидка 30% при заказе оптом</li>
-          <li>Срок изготовления — от 2 дней</li>
-          <li>Доставка по Минску</li>
-        </ul>
-      </div>
-    </div>
-    <div class="ba">
-      <figure><img src="img/anton-before.jpg" alt="Профиль мастерской до" width="1100" height="920"><figcaption>Было</figcaption></figure>
-      <figure class="after"><img src="img/anton-after.jpg" alt="Профиль мастерской после" width="1100" height="765"><figcaption>Стало</figcaption></figure>
     </div>
   </section>
 
