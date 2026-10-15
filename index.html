@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Стратегия, визуал, Reels и съёмки для бизнеса: реальные аккаунты, ролики и цифры.">
+<meta property="og:title" content="Соцсети уровня большого бренда">
+<meta property="og:description" content="Стратегия, визуал, Reels и съёмки для бизнеса: реальные аккаунты, ролики и цифры.">
+<meta property="og:image" content="img/poster-lizing.jpg">
+<meta property="og:type" content="website">
+<title>Портфолио: SMM и видео</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: editorial scroll in vertical 9:16 rhythm — hero with live reels, then one chapter per case, work first and words second */
+:root{
+  --paper:#EEF0F2;
+  --tile:#FFFFFF;
+  --ink:#0F1115;
+  --muted:#5A616C;
+  --line:#D2D6DC;
+  --accent:#2F3CFF;
+  --on-accent:#FFFFFF;
+  --bezel:#0F1115;
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0D0F13;--tile:#161920;--ink:#EEF0F3;--muted:#9AA1AC;--line:#272B33;--accent:#7E88FF;--on-accent:#0D0F13;--bezel:#000000;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0D0F13;--tile:#161920;--ink:#EEF0F3;--muted:#9AA1AC;--line:#272B33;--accent:#7E88FF;--on-accent:#0D0F13;--bezel:#000000;color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.accent{color:var(--accent)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ---------- HERO ---------- */
+.hero{padding-block:56px 40px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:center}
+.hero h1{font-size:clamp(36px,5.6vw,72px);line-height:1.02;font-weight:800;margin-top:18px}
+.hero .lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:34ch;margin-top:22px}
+.proof{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;background:var(--tile)}
+.chip b{font-weight:600}
+.reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:end}
+.reels .phone:nth-child(2){transform:translateY(-28px)}
+
+/* phone frame */
+.phone{position:relative;border-radius:26px;background:var(--bezel);padding:5px;box-shadow:0 24px 50px -24px rgba(15,17,21,.45);max-width:100%}
+.phone .screen{position:relative;border-radius:21px;overflow:hidden;aspect-ratio:9/16;background:#111}
+.phone video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.sound{position:absolute;left:10px;bottom:10px;border:0;border-radius:999px;padding:7px 11px;font:600 12px/1 var(--body);background:rgba(255,255,255,.92);color:#0F1115;cursor:pointer;display:flex;gap:6px;align-items:center}
+.sound[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.sound svg{width:14px;height:14px}
+.reel-cap{margin-top:12px;font-size:14px;line-height:1.35}
+.reel-cap b{display:block;font-weight:600}
+.reel-cap span{color:var(--muted)}
+
+/* ---------- SERVICES ---------- */
+section{padding-block:72px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.sec-head h2{font-size:clamp(26px,3.4vw,42px);font-weight:700;line-height:1.08;max-width:18ch}
+.sec-head p{color:var(--muted);max-width:42ch}
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+.svc{padding:24px 24px 28px 0;border-bottom:1px solid var(--line);min-width:0}
+.svc:not(:nth-child(3n+1)){padding-left:24px;border-left:1px solid var(--line)}
+.svc h3{font-family:var(--body);font-weight:600;font-size:19px;margin-bottom:8px;letter-spacing:0}
+.svc p{color:var(--muted);font-size:15px}
+
+/* ---------- CASES ---------- */
+.case{border-top:1px solid var(--line)}
+.case-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start;margin-bottom:36px}
+.case-head h2{font-size:clamp(28px,3.8vw,48px);font-weight:700;line-height:1.05;margin-top:14px}
+.case-head .intro{font-size:18px;max-width:46ch}
+.case-head .intro + .intro{margin-top:12px;color:var(--muted);font-size:16px}
+.did{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.did li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px;font-size:15px}
+.did li::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--accent);margin-top:8px}
+.facts{display:flex;flex-wrap:wrap;gap:28px 40px;margin-top:24px}
+.fact .n{font:700 clamp(28px,3vw,40px)/1 var(--display);font-variant-numeric:tabular-nums}
+.fact .l{font-size:13px;color:var(--muted);margin-top:6px;max-width:20ch}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+.tag{font:500 12px/1 var(--mono);border:1px solid var(--line);border-radius:6px;padding:7px 9px;color:var(--muted)}
+
+figure{margin:0;min-width:0}
+figure img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--tile)}
+figcaption{font:500 12px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.ba{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+.ba .after figcaption{color:var(--accent)}
+.ba-arrow{display:none}
+
+.video-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.video-row .phone{max-width:300px}
+
+.derma{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:start}
+.funnel{display:grid;gap:0;margin-top:22px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--tile)}
+.funnel div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px;padding:14px 16px;font-size:15px}
+.funnel div + div{border-top:1px solid var(--line)}
+.funnel span{font:500 12px/1.6 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+
+.stats-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.9fr);gap:20px;align-items:center;margin-top:28px}
+.stat{background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:20px}
+.stat .n{font:800 clamp(34px,4.4vw,56px)/1 var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
+.stat .l{margin-top:10px;font-size:14px;color:var(--muted)}
+.stat .l b{color:var(--ink);font-weight:600}
+.stats-pair figure img{border-radius:10px}
+
+.bio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;margin-bottom:28px}
+.bio .card{border-radius:14px;padding:20px;border:1px solid var(--line);background:var(--tile);font-size:15px;line-height:1.5}
+.bio .card .eyebrow{margin-bottom:12px;display:block}
+.bio .old{color:var(--muted)}
+.bio .old p{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--muted) 55%,transparent)}
+.bio .new{border-color:var(--accent)}
+.bio .new .eyebrow{color:var(--accent)}
+.bio .new strong{font-weight:600}
+.bio ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px}
+
+.mini{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:center}
+
+/* ---------- PROCESS / TEAM ---------- */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line);counter-reset:s}
+.steps li{counter-increment:s;padding:22px 22px 26px 0;border-bottom:1px solid var(--line);min-width:0}
+.steps li:not(:nth-child(3n+1)){padding-left:22px;border-left:1px solid var(--line)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:500 12px/1 var(--mono);color:var(--accent);display:block;margin-bottom:14px}
+.steps b{display:block;font-weight:600;font-size:18px;margin-bottom:6px}
+.steps span{color:var(--muted);font-size:15px}
+
+.team{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,2fr);gap:20px}
+.lead-card{background:var(--accent);color:var(--on-accent);border-radius:18px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:260px}
+.lead-card .eyebrow{color:inherit;opacity:.8}
+.lead-card h3{font-size:clamp(22px,2.4vw,30px);font-weight:700;line-height:1.12}
+.lead-card p{opacity:.9;font-size:15px}
+.roles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.role{background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
+.role b{display:block;font-weight:600;margin-bottom:4px}
+.role span{font-size:14px;color:var(--muted)}
+
+/* ---------- CTA ---------- */
+.cta{padding-block:88px 96px;border-top:1px solid var(--line)}
+.cta h2{font-size:clamp(34px,6vw,80px);font-weight:800;line-height:1;max-width:14ch}
+.cta p{color:var(--muted);margin-top:20px;max-width:46ch;font-size:18px}
+.contacts{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.contact{display:flex;align-items:center;gap:14px;background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:14px 14px 14px 18px}
+.contact .k{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:6px}
+.contact .v{font-weight:600;font-size:18px;user-select:all}
+.contact a.v{text-decoration:none}
+.copy{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;padding:9px 12px;font:600 13px/1 var(--body);cursor:pointer}
+.copy:hover{border-color:var(--accent);color:var(--accent)}
+footer{padding-block:0 40px;color:var(--muted);font-size:13px}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr);gap:36px;padding-block:36px 24px}
+  .case-head,.derma,.mini,.team{grid-template-columns:minmax(0,1fr);gap:24px}
+  .services,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .svc,.svc:not(:nth-child(3n+1)),.steps li,.steps li:not(:nth-child(3n+1)){padding:20px 18px 22px 0;border-left:0}
+  .svc:nth-child(2n),.steps li:nth-child(2n){padding-left:18px;border-left:1px solid var(--line)}
+  .stats-pair{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .stats-pair figure{grid-column:1/-1;max-width:420px}
+  .roles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  section{padding-block:56px}
+}
+@media (max-width:560px){
+  .reels{gap:8px}
+  .reels .phone{border-radius:16px;padding:3px}
+  .reels .phone .screen{border-radius:13px}
+  .reels .phone:nth-child(2){transform:translateY(-14px)}
+  .reels .sound{left:6px;bottom:6px;padding:6px 8px}
+  .reels .sound .t{display:none}
+  .services,.steps{grid-template-columns:minmax(0,1fr)}
+  .svc:nth-child(2n),.steps li:nth-child(2n){padding-left:0;border-left:0}
+  .ba,.bio{grid-template-columns:minmax(0,1fr)}
+  .video-row{grid-template-columns:minmax(0,1fr);justify-items:center;gap:36px}
+  .video-row > div{width:100%;max-width:300px}
+  .roles{grid-template-columns:minmax(0,1fr)}
+  .funnel div{grid-template-columns:minmax(0,1fr);gap:4px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<main>
+  <!-- HERO -->
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <span class="eyebrow">Портфолио · SMM, контент, видеопродакшн</span>
+        <h1>Соцсети уровня <span class="accent">большого бренда</span></h1>
+        <p class="lead">Стратегия, визуал, Reels и съёмки для бизнеса: от банка до частного мастера. Здесь собраны реальные аккаунты и ролики, которые можно открыть и посмотреть.</p>
+        <div class="proof">
+          <span class="chip"><b>Руководим SMM</b> в МТБанке</span>
+          <span class="chip"><b>Опыт</b> американских проектов</span>
+          <span class="chip"><b>Аккаунты</b> с нуля под ключ</span>
+          <span class="chip"><b>Полный цикл:</b> от стратегии до таргета</span>
+        </div>
+      </div>
+      <div>
+        <div class="reels" aria-label="Ролики для МТБанка">
+          <div class="phone"><div class="screen">
+            <video src="video/lizing.mp4" poster="img/poster-lizing.jpg" muted loop playsinline autoplay preload="metadata"></video>
+            <button class="sound" type="button" aria-pressed="false" aria-label="Включить звук"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="w" d="M16 9a4 4 0 0 1 0 6"/></svg><span class="t">Звук</span></button>
+          </div></div>
+          <div class="phone"><div class="screen">
+            <video src="video/hr.mp4" poster="img/poster-hr.jpg" muted loop playsinline autoplay preload="metadata"></video>
+            <button class="sound" type="button" aria-pressed="false" aria-label="Включить звук"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="w" d="M16 9a4 4 0 0 1 0 6"/></svg><span class="t">Звук</span></button>
+          </div></div>
+          <div class="phone"><div class="screen">
+            <video src="video/mebel.mp4" poster="img/poster-mebel.jpg" muted loop playsinline autoplay preload="metadata"></video>
+            <button class="sound" type="button" aria-pressed="false" aria-label="Включить звук"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="w" d="M16 9a4 4 0 0 1 0 6"/></svg><span class="t">Звук</span></button>
+          </div></div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="wrap" aria-labelledby="svc-h">
+    <div class="sec-head">
+      <h2 id="svc-h">Что берём на себя</h2>
+      <p>Один проект ведёт команда: каждую задачу делает отдельный специалист. Вам не нужно собирать подрядчиков по одному.</p>
+    </div>
+    <div class="services">
+      <div class="svc"><h3>Стратегия и позиционирование</h3><p>Ниша, конкуренты, аудитория. Позиционирование, брендовая история, контентные оси.</p></div>
+      <div class="svc"><h3>Визуал и упаковка профиля</h3><p>Шапка, сетка, обложки актуальных, закрепы. Единый стиль ленты на месяц вперёд.</p></div>
+      <div class="svc"><h3>Reels и видеопродакшн</h3><p>Сценарии с хуками, выездные съёмки, монтаж, цветокоррекция, плашки и титры.</p></div>
+      <div class="svc"><h3>Контент каждый день</h3><p>Контент-план, посты и карусели, ежедневные сторис, опросы и рубрики.</p></div>
+      <div class="svc"><h3>Активности и события</h3><p>Клиентские дни, вебинары, семинары, конкурсы кейсов, розыгрыши и анонсы.</p></div>
+      <div class="svc"><h3>Таргетированная реклама</h3><p>Сегменты аудитории, креативы, тесты гипотез, контроль цены заявки и отчёты.</p></div>
+    </div>
+  </section>
+
+  <!-- CASE: MTBANK -->
+  <section class="case wrap" id="mtbank" aria-labelledby="mt-h">
+    <div class="case-head">
+      <div>
+        <span class="eyebrow">Банк · видеопродакшн</span>
+        <h2 id="mt-h">Ролики для МТБанка</h2>
+        <div class="tags"><span class="tag">продуктовые Reels</span><span class="tag">партнёрский контент</span><span class="tag">HR-бренд</span></div>
+      </div>
+      <div>
+        <p class="intro">Продуктовое и имиджевое видео для одного из крупных банков Беларуси.</p>
+        <p class="intro">Работа в рамках брендбука, с согласованиями и точными условиями продуктов на плашках. Лёгкая подача без ощущения, что смотришь рекламу банка.</p>
+      </div>
+    </div>
+    <div class="video-row">
+      <div>
+        <div class="phone"><div class="screen">
+          <video src="video/lizing.mp4" poster="img/poster-lizing.jpg" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-pressed="false" aria-label="Смотреть со звуком"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="w" d="M16 9a4 4 0 0 1 0 6"/></svg><span class="t">Смотреть со звуком</span></button>
+        </div></div>
+        <p class="reel-cap"><b>Лизинг техники для бизнеса</b><span>Съёмка на площадке с тягачами, динамичные пролёты, условия плашками.</span></p>
+      </div>
+      <div>
+        <div class="phone"><div class="screen">
+          <video src="video/mebel.mp4" poster="img/poster-mebel.jpg" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-pressed="false" aria-label="Смотреть со звуком"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="w" d="M16 9a4 4 0 0 1 0 6"/></svg><span class="t">Смотреть со звуком</span></button>
+        </div></div>
+        <p class="reel-cap"><b>Кредит на мебель с партнёром</b><span>Сюжетный ролик в мебельном салоне: продукт банка внутри живой сцены.</span></p>
+      </div>
+      <div>
+        <div class="phone"><div class="screen">
+          <video src="video/hr.mp4" poster="img/poster-hr.jpg" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-pressed="false" aria-label="Смотреть со звуком"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="w" d="M16 9a4 4 0 0 1 0 6"/></svg><span class="t">Смотреть со звуком</span></button>
+        </div></div>
+        <p class="reel-cap"><b>«Один день пушистого сотрудника»</b><span>HR-бренд: офисный йорк проживает рабочий день банка, от 8:03 до дороги домой.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE: DERMAGENETIC -->
+  <section class="case wrap" id="dermagenetic" aria-labelledby="dg-h">
+    <div class="derma">
+      <figure>
+        <img src="img/derma.jpg" alt="Профиль dermagenetic.by: шапка, актуальные и лента" width="750" height="769">
+        <figcaption>dermagenetic.by · лента сейчас</figcaption>
+      </figure>
+      <div>
+        <span class="eyebrow">Профессиональная косметика · B2B и B2C</span>
+        <h2 id="dg-h" style="font-size:clamp(28px,3.8vw,48px);font-weight:700;line-height:1.05;margin-top:14px">Dermagenetic: аккаунт бренда с нуля</h2>
+        <p class="intro" style="margin-top:18px;font-size:18px">Греческая ионная космецевтика. Аккаунт говорит сразу с двумя аудиториями: с врачами и эстетистами, которые работают на системе, и с их клиентами.</p>
+        <ul class="did">
+          <li>Позиционирование в три строки: проф. система, превентивная косметология, научный подход автора бренда</li>
+          <li>Актуальные под путь клиента: Косметика, Состав, Семинары, Как купить?, Команда</li>
+          <li>Редакционный визуал: предметка, атмосферные кадры, экспертные обложки</li>
+        </ul>
+        <div class="funnel">
+          <div><span>Обучение</span>Онлайн-вебинар с тренером бренда и экспертный семинар</div>
+          <div><span>Клиенты</span>Клиентский день: разбор косметички и подбор ухода</div>
+          <div><span>Вовлечение</span>Конкурс кейсов до/после среди мастеров, розыгрыш</div>
+          <div><span>Доверие</span>Отзывы и представление новых тренеров</div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="n">0 → 1 105</div><div class="l">подписчиков в профессиональной нише</div></div>
+          <div class="fact"><div class="n">64</div><div class="l">публикации в единой системе</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE: BROWS -->
+  <section class="case wrap" id="brows" aria-labelledby="br-h">
+    <div class="case-head">
+      <div>
+        <span class="eyebrow">Бьюти-услуги · брови и ресницы</span>
+        <h2 id="br-h">Мастер бровей: единый стиль и рост охватов</h2>
+      </div>
+      <div>
+        <p class="intro">Лента была набором случайных кадров: разный свет, фон и подача. Задача — собрать узнаваемый стиль, поднять охваты и удержать их.</p>
+        <ul class="did">
+          <li>Выбрали единый стиль: спокойные тона, крупные планы, чередование работ, процесса и предметки</li>
+          <li>Расписали визуал на месяц вперёд</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ba">
+      <figure><img src="img/brows-before.jpg" alt="Лента до начала работы" width="671" height="1050"><figcaption>Было</figcaption></figure>
+      <figure class="after"><img src="img/brows-after.jpg" alt="Лента после: единый стиль" width="722" height="962"><figcaption>Стало</figcaption></figure>
+    </div>
+    <div class="stats-pair">
+      <div class="stat"><div class="n">+77,6%</div><div class="l"><b>охват</b>: 5 755 аккаунтов к предыдущему месяцу</div></div>
+      <div class="stat"><div class="n">+496%</div><div class="l"><b>вовлечённые аккаунты</b>: 149 к предыдущему месяцу</div></div>
+      <figure><img src="img/brows-stats.jpg" alt="Скриншот статистики Instagram" width="1100" height="754"><figcaption>Статистика Instagram</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- CASE: EXPERT -->
+  <section class="case wrap" id="expert" aria-labelledby="ex-h">
+    <div class="case-head">
+      <div>
+        <span class="eyebrow">Личный бренд · обучение</span>
+        <h2 id="ex-h">Анастасия Чучупалова: эксперт вместо афиши</h2>
+        <div class="facts">
+          <div class="fact"><div class="n">3 330</div><div class="l">подписчиков</div></div>
+          <div class="fact"><div class="n">28 лет</div><div class="l">опыта эксперта, упакованные в смыслы</div></div>
+        </div>
+      </div>
+      <div>
+        <p class="intro">Преподаватель дефиле и фотопозирования. Раньше лента состояла из анонсов: яркий фон, даты, «читай описание».</p>
+        <ul class="did">
+          <li>Строгий визуал: чёрно-белые кадры с красным акцентом</li>
+          <li>Обложки говорят словами аудитории: «Боюсь, что у меня не получится», «Я не модель — зачем мне дефиле?»</li>
+          <li>Курс продаётся через страхи и ценности, а не через расписание</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ba">
+      <figure><img src="img/nastya-before.jpg" alt="Лента эксперта до: анонсы на ярком фоне" width="961" height="1280"><figcaption>Было</figcaption></figure>
+      <figure class="after"><img src="img/nastya-after.jpg" alt="Профиль эксперта после: экспертные обложки" width="1100" height="765"><figcaption>Стало</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- CASE: PRODUCTION -->
+  <section class="case wrap" id="production" aria-labelledby="pr-h">
+    <div class="case-head">
+      <div>
+        <span class="eyebrow">Производство · Минск · B2B</span>
+        <h2 id="pr-h">Мастерская изделий из фанеры: упаковка под заказы</h2>
+      </div>
+      <div>
+        <p class="intro">Профиль выглядел как личная страница: «Антон, предприниматель». Непонятно, что заказать, для кого и как быстро.</p>
+        <p class="intro">Переписали шапку так, чтобы за три секунды было ясно, что делают, для кого, за какой срок и куда везут. Добавили единые обложки актуальных, закрепы «Пять причин выбрать нас» и «Правила ухода», Reels процесса.</p>
+      </div>
+    </div>
+    <div class="bio">
+      <div class="card old">
+        <span class="eyebrow">Шапка: было</span>
+        <p><strong>Антон</strong> · Предприниматель<br>Изготовление изделий из фанеры на заказ. Широкий спектр изделий, от простых элементов до сложных композиций. Логотипы, коробки и многое другое</p>
+      </div>
+      <div class="card new">
+        <span class="eyebrow">Шапка: стало</span>
+        <strong>Стенды | Логотипы | Панно | Конструкторы | Минск</strong>
+        <ul>
+          <li>Изготовим оборудование для баров и кафе</li>
+          <li>Нанесём гравировку</li>
+          <li>Скидка 30% при заказе оптом</li>
+          <li>Срок изготовления — от 2 дней</li>
+          <li>Доставка по Минску</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ba">
+      <figure><img src="img/anton-before.jpg" alt="Профиль мастерской до" width="1100" height="920"><figcaption>Было</figcaption></figure>
+      <figure class="after"><img src="img/anton-after.jpg" alt="Профиль мастерской после" width="1100" height="765"><figcaption>Стало</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- CASE: SHOP -->
+  <section class="case wrap" id="shop" aria-labelledby="sh-h">
+    <div class="mini">
+      <figure><img src="img/skinself.jpg" alt="Профиль skinself_cosmetics" width="720" height="615"><figcaption>skinself_cosmetics</figcaption></figure>
+      <div>
+        <span class="eyebrow">E-commerce · косметика · Минск</span>
+        <h2 id="sh-h" style="font-size:clamp(28px,3.8vw,48px);font-weight:700;line-height:1.05;margin-top:14px">Магазин, который смотрят дальше подписчиков</h2>
+        <p class="intro" style="margin-top:18px;font-size:18px">Магазин профессиональной косметики для домашнего ухода. Reels с уходом, карусели про составы, трендовые форматы. Актуальные отвечают на вопросы до покупки: отзывы, как купить, составы, SPF.</p>
+        <div class="facts">
+          <div class="fact"><div class="n">16,1 тыс.</div><div class="l">просмотров за 30 дней</div></div>
+          <div class="fact"><div class="n">1 113</div><div class="l">подписчиков: контент выходит далеко за пределы базы</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="wrap" aria-labelledby="pc-h" style="border-top:1px solid var(--line)">
+    <div class="sec-head">
+      <h2 id="pc-h">Как строим работу</h2>
+      <p>Фиксированные объёмы в договоре и отчёт каждый месяц. Вы видите, за что платите.</p>
+    </div>
+    <ol class="steps">
+      <li><b>Погружение</b><span>Бриф, аудит профиля, конкуренты, портрет аудитории.</span></li>
+      <li><b>Стратегия</b><span>Позиционирование, контентные оси, визуальная концепция.</span></li>
+      <li><b>План и сценарии</b><span>Контент-план на месяц, сценарии Reels, согласование с вами.</span></li>
+      <li><b>Съёмки</b><span>Выезды на вашу площадку: видео, фото, бэкстейдж.</span></li>
+      <li><b>Публикации</b><span>Лента, Reels и ежедневные сторис строго по плану.</span></li>
+      <li><b>Отчёт</b><span>Разбор месяца: что сработало, что меняем дальше.</span></li>
+    </ol>
+  </section>
+
+  <!-- TEAM -->
+  <section class="wrap" aria-labelledby="tm-h" style="border-top:1px solid var(--line)">
+    <div class="sec-head">
+      <h2 id="tm-h">Команда под ваш проект</h2>
+      <p>Каждую роль закрывает отдельный человек. Стратегию держат основатели лично.</p>
+    </div>
+    <div class="team">
+      <div class="lead-card">
+        <span class="eyebrow">Стратегия</span>
+        <h3>Руководитель SMM-отдела крупного банка</h3>
+        <p>Опыт американских и белорусских проектов, работа с крупным брендом изнутри: процессы, согласования, отчётность.</p>
+      </div>
+      <div class="roles">
+        <div class="role"><b>Контент-менеджер</b><span>Контент-план, сторис, интерактивы</span></div>
+        <div class="role"><b>Копирайтер</b><span>Посты, карусели, сценарии Reels</span></div>
+        <div class="role"><b>Дизайнер</b><span>Сетка, шаблоны, обложки, баннеры</span></div>
+        <div class="role"><b>Мобилограф</b><span>Выездные съёмки и монтаж Reels</span></div>
+        <div class="role"><b>Фотограф</b><span>Предметная и интерьерная съёмка</span></div>
+        <div class="role"><b>Таргетолог</b><span>Кампании, креативы, тесты, отчёты</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta wrap" aria-labelledby="cta-h">
+    <span class="eyebrow">Следующий шаг</span>
+    <h2 id="cta-h" style="margin-top:16px">Давайте сделаем так же для вас</h2>
+    <p>Напишите пару слов о бизнесе. Вернёмся с разбором вашего профиля и предложением по формату работы.</p>
+    <div class="contacts">
+      <div class="contact">
+        <div><span class="k">Telegram</span><a class="v" href="https://t.me/nik_chyvel" target="_blank" rel="noopener">@nik_chyvel</a></div>
+        <button class="copy" type="button" data-copy="@nik_chyvel">Скопировать</button>
+      </div>
+      <div class="contact">
+        <div><span class="k">Телефон</span><span class="v">+375 29 267-67-53</span></div>
+        <button class="copy" type="button" data-copy="+375292676753">Скопировать</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">Цифры взяты из статистики Instagram на момент работы над проектами.</footer>
+</main>
+
+<script>
+(function(){
+  var videos = Array.prototype.slice.call(document.querySelectorAll('.phone video'));
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function setBtn(btn, on){
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    var w = btn.querySelector('.w'); if (w) w.style.opacity = on ? '1' : '0';
+  }
+  document.querySelectorAll('.sound .w').forEach(function(w){ w.style.opacity = '0'; });
+
+  document.querySelectorAll('.sound').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var v = btn.parentNode.querySelector('video');
+      var turnOn = v.muted;
+      videos.forEach(function(o){
+        if (o !== v && !o.muted){ o.muted = true; setBtn(o.parentNode.querySelector('.sound'), false); }
+      });
+      v.muted = !turnOn;
+      if (turnOn){ try { v.currentTime = 0; } catch(e){} var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+      setBtn(btn, turnOn);
+    });
+  });
+
+  // Play only what is on screen
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        var v = e.target;
+        if (e.isIntersecting){
+          if (reduce && v.muted) return;
+          if (v.preload === 'none') v.preload = 'metadata';
+          var p = v.play(); if (p && p.catch) p.catch(function(){});
+        } else { v.pause(); }
+      });
+    }, {threshold: 0.35});
+    videos.forEach(function(v){ io.observe(v); });
+  }
+
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click', function(){
+      var text = b.getAttribute('data-copy');
+      var done = function(){ var t = b.textContent; b.textContent = 'Скопировано'; setTimeout(function(){ b.textContent = t; }, 1600); };
+      var fallback = function(){
+        var el = b.parentNode.querySelector('.v');
+        var r = document.createRange(); r.selectNodeContents(el);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      };
+      try {
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } catch(e){ fallback(); }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
